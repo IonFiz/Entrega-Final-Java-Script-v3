@@ -27,18 +27,22 @@
     <!-- Font Awesome - Icons -->
     <script src="https://kit.fontawesome.com/d78df47158.js" crossorigin="anonymous"></script>
 
-    <!-- Google Fonts - Montserrat)-->
+    <!-- Google Fonts - Montserrat-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- HEADER -->
+    
     <header class="container-md header">
+
         <!-- Parte superior del header -->
+
         <div class="row m-0 mb-3 d-none d-md-flex">
 
             <!-- Buscador -->
+
             <div class="col-4 flexFullCenter">
                 <form class="input-group px-lg-3 header__buscador">
                     
@@ -51,13 +55,15 @@
             </div>
 
             <!-- Logo -->
+
             <div class="col-4">
                 <a href="./index.html" class="flexFullCenter">
-                    <img src="./assets/images/logov2.png" alt="Ora Ora Costume Logo" class="img-fluid col-lg-10 rounded-circle header__logo">
+                    <img src="./assets/images/logov2.png" alt="Nexus Bro Rental Logo" class="img-fluid col-lg-10 rounded-circle header__logo">
                 </a>
             </div>
 
             <!-- Carrito y opciones de usuario -->
+
             <div class="col-4 flexFullCenter">
                 <div class="col-12 col-lg-9">
 
@@ -71,19 +77,23 @@
                     <div class="d-flex justify-content-evenly header__cuenta">
 
                         <!-- Botón registro -->
+
                         <button type="button" class="header__cuenta__boton" data-bs-toggle="modal" data-bs-target="#registerModal">CREAR CUENTA</button>
                         <button type="button" class="header__cuenta__boton d-none botonCuenta">CUENTA</button>
                       
                         <span>|</span>
 
                         <!-- Botón Login -->
+
                         <button type="button" class="header__cuenta__boton" data-bs-toggle="modal" data-bs-target="#loginModal">INICIAR SESIÓN</button>
                         <button type="button" class="header__cuenta__boton d-none botonSalir">SALIR</button>
                     </div>  
                 </div> 
             </div>
         </div>
+        
         <!-- Navbar -->
+
         <div class="row">
             <nav class="navbar navbar-expand-md navbar-light p-md-0 header__nav">
 
@@ -91,7 +101,7 @@
 
                 <!-- Logo -->
                 <a class="navbar-toggler header__nav__item header__nav__item__logo" href="./index.html">
-                    <img src="./assets/images/logo.jfif" alt="Ora Ora Costume Logo" class="rounded-circle img-fluid">
+                    <img src="./assets/images/logov2.png" alt="Nexus Bro Rental Logo" class="rounded-circle img-fluid">
                 </a>
 
                 <!-- Opciones de usuario -->
@@ -119,12 +129,14 @@
                 </button>
 
                 <!-- WhatsApp -->
+
                 <a target="_blank" href="https://api.whatsapp.com/send?phone=2236690005&text=Hola necesito más información!" class="navbar-toggler header__nav__item">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
                 
 
                 <!-- Icono de hamburguesa -->
+
                 <button class="navbar-toggler header__nav__item" type="button" data-bs-toggle="collapse" data-bs-target="#header__nav__ul" aria-controls="header__nav__ul" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -142,6 +154,7 @@
         </div>
 
         <!-- Carrito que se abre cuando se hace click en el carrito -->
+
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCarrito" aria-labelledby="offcanvasCarritoLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasCarritoLabel">CARRITO DE COMPRAS</h5>
@@ -164,6 +177,7 @@
             </div>
         </div>
     </header>
+    
     <!-- HEADER -->
 </body>
 </html>
