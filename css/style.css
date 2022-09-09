@@ -89,6 +89,10 @@ body{
 
 /**CONTACTO**/
 
+section mb-4{
+    justify-content: center;
+}
+
 .botoncontacto button {
      
         font-family: inherit;
