@@ -159,9 +159,8 @@ section mb-4{
     
     position: relative;
     width: 50%;
-    &:hover .overlay {
-        opacity: 1;
-      }
+}
+    
   
   
   .image {
@@ -182,6 +181,10 @@ section mb-4{
     transition: .5s ease;
     background-color: #000000;
   }
+
+  .containerequipos:hover .overlay {
+    opacity: 1;
+  }
   
   
   
@@ -197,7 +200,7 @@ section mb-4{
     text-align: center;
 }
 
-}
+
 
 .botonequipos  button {
     padding: 1.3em 3em;
