@@ -23,7 +23,9 @@ body{
 /**FOOTER**/
 
 .footer {
-    margin: 30px; }
+    margin: 30px; 
+    color: white}
+    
   
   .footer .row a {
     text-decoration: none;
