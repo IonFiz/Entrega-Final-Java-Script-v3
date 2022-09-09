@@ -20,6 +20,24 @@ body{
     align-items: center;
 }
 
+
+
+main h1 {
+  color: white;
+  justify-content: center;
+}
+main h3 {
+  color: white;
+  justify-content: center;
+}
+main a {
+  color: white;
+  justify-content: center;
+}
+
+main  a:hover {
+  color: darkred; }
+
 /**FOOTER**/
 
 .footer {
