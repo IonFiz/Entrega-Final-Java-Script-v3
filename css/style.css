@@ -6,39 +6,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-a {
-    text-decoration: none;
-	color: inherit;
-
-    &:hover {
-        color: inherit
-    }
-}   
-
-ul {
-    list-style: none;
-}
-
-::selection {
-    color: white;
-    background-color: color-danger;
-}
-
-
-
 body{
     background-color:black;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
 
-.form-control:focus {
-    border: solid 1px color-primary-focus;
-    box-shadow: color-primary-focus 0px 0px 15px;
-}
+
+
 
 .flexFullCenter {
     display: flex;
@@ -94,8 +68,8 @@ img {
 
 
 
-.mainrequisitos {
-    h2{
+.mainrequisitos h2 {
+   
         color: white;
         padding: 2px;
         text-align: center;
@@ -105,12 +79,73 @@ img {
         color: white;
     }
 
-    ul{
-        li{
+    ul li{
+        
             color: white;
             padding: 2px
+        
         }
-        }
+    
+
+/**CONTACTO**/
+
+.botoncontacto button {
+     
+        font-family: inherit;
+        font-size: 20px;
+        background: royalblue;
+        color: white;
+        padding: 0.7em 1em;
+        padding-left: 0.9em;
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 16px;
+        overflow: hidden;
+        transition: all 0.2s;
+        float: right;
+        margin: 10px;
+   }
+
+   .botoncontacto span{
+        display: block;
+        margin-left: 0.3em;
+        transition: all 0.3s ease-in-out;
+   }
+
+
+   
+   
+   
+   .botoncontacto button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+   }
+   
+   .botoncontacto button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+   }
+   
+   .botoncontacto button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+   }
+   
+   .botoncontacto button:hover span {
+    transform: translateX(5em);
+   }
+   
+   .botoncontacto button:active {
+    transform: scale(0.95);
+   }
+   
+   @keyframes fly-1 {
+    from {
+     transform: translateY(0.1em);
     }
-
-
+   
+    to {
+     transform: translateY(-0.1em);
+    }
+   }
+   
