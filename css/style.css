@@ -7,12 +7,32 @@
 }
 
 body{
-    background-color:darkgrey;
+    background-color:black;
 }
 
 
+/**navbar**/
+.nav-link{
+  color: white;
+  
+}
 
+.nav-link:hover {
+  color: darkred; }
 
+.navbar-light .navbar-toggler{
+  color: white;
+}
+
+.navbar-toggler-icon{
+  color:white
+}
+
+.navbar-toggler{
+  background-color: rgb(78,78, 78, 10%);
+}
+
+/**navbar**/
 
 .flexFullCenter {
     display: flex;
