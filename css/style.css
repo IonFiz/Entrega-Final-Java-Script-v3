@@ -163,13 +163,13 @@ section mb-4{
     
   
   
-  .image {
+.containerequipos .image {
     display: block;
     width: 100%;
     height: auto;
   }
   
-  .overlay {
+  .containerequipos  .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -233,4 +233,85 @@ section mb-4{
     text-decoration: none;
     color:#000;
    }
+
+/**NOSOTROS**/
+   .containernosotros{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+   }
+    .containernosotros h1{
+
+        text-align:center;
+        padding: 1rem;
+    }
+
+    .containernosotros p{
+        text-align: center;
+    }
+
+    .containernosotros h2{
+        text-align: center;
+    }
+    
+
+
+.w3-container{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .w3-container  h5{
+        color: darkred;
+    }
+   
+    
+
+
+ .container {
+    
+
+    position: relative;
+    width: 50%;
+    padding: 20px;
+}
+   
+  
+  
+.container  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+ .container:hover .overlay {
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
 
