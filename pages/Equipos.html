@@ -37,135 +37,113 @@
 
     <!-- HEADER -->
     
+    <!-- HEADER -->
+    
     <header class="container-md header">
 
-        <!-- Parte superior del header -->
+      <!-- Parte superior del header -->
 
-        <div class="row m-0 mb-3 d-none d-md-flex">
+      <div class="row m-0 mb-3 d-none d-md-flex">
 
-            <!-- Logo -->
+          <!-- Logo -->
 
-            <div class="col-6">
-                <a href="../index.html" class="flexFullCenter">
-                    <img src="../assets/images/logov2.png" alt="Nexus Bro Rental Logo" class="img-fluid col-lg-10  header__logo">
-                </a>
-            </div>
+          <div class="col-3">
+              <a href="./index.html" class="flexFullCenter">
+                  <img src="../assets/images/logov2.png" alt="Nexus Bro Rental Logo" class="img-fluid col-lg-10  header__logo">
+              </a>
+          </div>
 
-            <!-- Carrito y opciones de usuario -->
+           <!-- Audio Icon -->
 
-            <div class="col-6 flexFullCenter">
-                <div class="col-12 col-lg-9">
+      <div class="col-3">
+          
+          <audio id="audioShop" src="../assets/music/y2mate.com - Deep Dish  Driving To Heaven_320kbps.mp3" autoplay loop="true"></audio>
+          
+          <div id="audioIcon">
+         
+          </div>
 
-                    <div class="p-0 mb-1 header__carrito">
-                        <button type="button" class="btn btn-danger rounded-0 w-100 text-white fs-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrito" aria-controls="offcanvasCarrito">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <span>CARRITO (0) $0</span>
-                        </button>
-                    </div>
+      </div>
 
-                    <div class="d-flex justify-content-evenly header__cuenta">
+      <!-- Github Icon -->
+      
+      <div class="col-3">
+          
+          <a href="https://github.com/IonFiz/Entrega-Final-Java-Script-v3" class=" fa-brands fa-github"></a>
+         
+      </div>
 
-                        <!-- Botón registro -->
+      <!-- Carrito Icon -->
+          
+      <div class="col-3">
+          
+          <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+         
+      </div>
 
-                        <button type="button" class="header__cuenta__boton" data-bs-toggle="modal" data-bs-target="#registerModal">CREAR CUENTA</button>
-                        <button type="button" class="header__cuenta__boton d-none botonCuenta">CUENTA</button>
-                      
-                        <span>|</span>
 
-                        <!-- Botón Login -->
 
-                        <button type="button" class="header__cuenta__boton" data-bs-toggle="modal" data-bs-target="#loginModal">INICIAR SESIÓN</button>
-                        <button type="button" class="header__cuenta__boton d-none botonSalir">SALIR</button>
-                    </div>  
-                </div> 
-            </div>
-        </div>
-        
-        <!-- Navbar -->
+         
+      </div>
+      
+      <!-- Navbar -->
 
-        <div class="row">
-            <nav class="navbar navbar-expand-md navbar-light p-md-0 header__nav">
+      <div class="row">
+          <nav class="navbar navbar-expand-md navbar-light p-md-0 header__nav">
 
-                <!-- Nota: Todos los elementos de abajo son para la vista mobile -->
+              <!-- Nota: Todos los elementos de abajo son para la vista mobile -->
 
-                <!-- Logo -->
-                <a class="navbar-toggler header__nav__item header__nav__item__logo" href="./index.html">
-                    <img src="../assets/images/logov2.png" alt="Nexus Bro Rental Logo" class="rounded-circle img-fluid">
-                </a>
+              <!-- Logo -->
+              <a class="navbar-toggler header__nav__item header__nav__item__logo" href="./index.html">
+                  <img src="../assets/images/logov2.png" alt="Nexus Bro Rental Logo" class="rounded-circle img-fluid">
+              </a>
 
-                <!-- Opciones de usuario -->
-                <div class="dropup d-md-none">
-                    <button class="navbar-toggler header__nav__item dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-regular fa-user"></i>
-                    </button>
-                    <div class="dropdown-menu text-center mb-3 header__cuenta bg-dark">
-                        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#registerModal">CREAR CUENTA</button>
-                        <button type="button" class="btn btn-light d-none botonCuenta">CUENTA</button>
+              <!-- Github Icon -->
+              <a target="_blank" href="https://github.com/IonFiz/Entrega-Final-Java-Script-v3" class="navbar-toggler header__nav__item">
+                  <i class="fa-brands fa-github"></i>
+              </a>
 
-                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">INICIAR SESIÓN</button>
-                        <button type="button" class="btn btn-dark d-none botonSalir">SALIR</button>
-                    </div>
-                </div>
-        
-                <!-- Buscador -->
-                <button class="navbar-toggler header__nav__item" id="headerBuscadorMobile">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+              <!-- WhatsApp -->
 
-                <!-- Carrito -->
-                <button class="navbar-toggler header__nav__item" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrito" aria-controls="offcanvasCarrito">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </button>
+              <a target="_blank" href="https://www.facebook.com/pioneer.dj.global" class="navbar-toggler header__nav__item">
+                  <i class="fa-brands fa-whatsapp"></i>
+              </a>
 
-                <!-- WhatsApp -->
+              <!-- Facebook -->
 
-                <a target="_blank" href="https://api.whatsapp.com/send?phone=1133851992&text=Hola necesito más información!" class="navbar-toggler header__nav__item">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-                
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=1133851992&text=Hola necesito más información!" class="navbar-toggler header__nav__item">
+                  <i class="fa fa-facebook"></i>
+              </a>
 
-                <!-- Icono de hamburguesa -->
+              <!-- Youtube -->
 
-                <button class="navbar-toggler header__nav__item" type="button" data-bs-toggle="collapse" data-bs-target="#header__nav__ul" aria-controls="header__nav__ul" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse fs-4" id="header__nav__ul">
-                    <ul class="nav nav-pills nav-fill w-100 d-md-flex justify-content-evenly flex-column flex-md-row p-md-0 py-5">
-                        <li class="nav-item"><a href="../index.html" class="nav-link activo">Home</a></li>
-                        <li class="nav-item"><a href="../pages/Nosotros.html" class="nav-link">Nosotros</a></li>
-                        <li class="nav-item"><a href="../pages/Equipos.html" class="nav-link">Equipos</a></li>
-                        <li class="nav-item"><a href="../pages/Requisitos.html" class="nav-link">Requisitos</a></li>
-                        <li class="nav-item"><a href="../pages/Contacto.html" class="nav-link">Contacto</a></li>
-                    </ul>                    
-                </div>
-            </nav>
-        </div>
+              <a target="_blank" href="https://www.youtube.com/watch?v=h0pCMWdsnXU&ab_channel=PioneerDJ" class="navbar-toggler header__nav__item">
+                  <i class="fa fa-youtube"></i>
+              </a>
+              
 
-        <!-- Carrito que se abre cuando se hace click en el carrito -->
+              <!-- Icono de hamburguesa -->
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCarrito" aria-labelledby="offcanvasCarritoLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasCarritoLabel">CARRITO DE COMPRAS</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
+              <button class="navbar-toggler header__nav__item" type="button" data-bs-toggle="collapse" data-bs-target="#header__nav__ul" aria-controls="header__nav__ul" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse fs-4" id="header__nav__ul">
+                  <ul class="nav nav-pills nav-fill w-100 d-md-flex justify-content-evenly flex-column flex-md-row p-md-0 py-5">
+                      <li class="nav-item"><a href="/index.html" class="nav-link activo">Home</a></li>
+                      <li class="nav-item"><a href="../pages/Nosotros.html" class="nav-link">Nosotros</a></li>
+                      <li class="nav-item"><a href="../pages/Equipos.html" class="nav-link">Equipos</a></li>
+                      <li class="nav-item"><a href="../pages/Requisitos.html" class="nav-link">Requisitos</a></li>
+                      <li class="nav-item"><a href="../pages/Contacto.html" class="nav-link">Contacto</a></li>
+                  </ul>                    
+              </div>
+          </nav>
+      </div>
 
-            <div class="offcanvas-body header__carrito__offcanvas pt-0">
-                <div class="header__carrito__offcanvas__head">
-                    <span>PRODUCTO</span>
-                    <span>SUBTOTAL</span>
-                </div>
+      
 
-                <div id="carritoVacio">
-                    <h5>No hay productos en su carrito!</h5>
-                </div>
-
-                <form id="galeria__carrito"></form>
-
-                <form id="footer__carrito"></form>
-            </div>
-        </div>
-    </header>
+      
+  </header>
 
     <!-- HEADER -->
 
